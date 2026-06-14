@@ -2,6 +2,8 @@
 
 A full-stack web application for managing volunteer registrations at NayePankh Foundation, one of India's biggest student-led NGOs.
 
+## Live URL: https://nayepankh-volunteer-system.vercel.app/
+
 ## ✨ Features
 
 - **🎨 Premium UI** — Modern glassmorphism design with micro-animations
@@ -10,7 +12,7 @@ A full-stack web application for managing volunteer registrations at NayePankh F
 - **📊 Admin Dashboard** — Stats cards, search, filter, approve/reject
 - **📧 Email Notifications** — Automated emails sent to volunteers upon approval/rejection (via Nodemailer)
 - **📥 CSV Export** — Download volunteer data for offline use
-- **🗄️ SQLite Database** — Zero-config local database via Prisma ORM
+- **🗄️ PostgreSQL Database** — Powerful relational database via Prisma ORM
 
 ## 🚀 Quick Start
 
@@ -22,7 +24,7 @@ npm install
 2. **Configure Environment Variables:**
 Create a `.env` file in the root directory and add the following:
 ```env
-DATABASE_URL="file:./dev.db"
+DATABASE_URL="postgresql://user:password@localhost:5432/nayepankh"
 NEXTAUTH_SECRET="your-secret-key-for-development"
 NEXTAUTH_URL="http://localhost:3000"
 
@@ -62,6 +64,6 @@ See [DOCUMENTATION.md](./DOCUMENTATION.md) for detailed architecture, user flows
 - [Prisma ORM](https://prisma.io/) — Type-safe database toolkit
 - [NextAuth.js](https://next-auth.js.org/) — Authentication
 - [Nodemailer](https://nodemailer.com/) — Email sending
-- [SQLite](https://www.sqlite.org/) — Embedded database
+- [PostgreSQL](https://www.postgresql.org/) — Relational database
 
 ---

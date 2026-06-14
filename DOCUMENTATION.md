@@ -20,7 +20,7 @@ This is a **full-stack Volunteer Registration System** that digitizes NayePankh 
 |-------|-----------|---------|
 | **Framework** | Next.js 16 (App Router) | Full-stack React framework for SSR + API routes |
 | **Frontend** | React 19 + Vanilla CSS Modules | Component-based UI with scoped, collision-free styles |
-| **Database** | SQLite via Prisma ORM v6 | Zero-config local DB with type-safe queries |
+| **Database** | PostgreSQL via Prisma ORM v6 | Powerful relational DB with type-safe queries |
 | **Auth** | NextAuth.js v4 (JWT) | Session management with Credentials provider |
 | **Security** | bcryptjs | Password hashing (salted, 10 rounds) |
 
@@ -54,7 +54,6 @@ src/
 │   └── auth.js            # NextAuth config
 prisma/
 ├── schema.prisma          # Database models
-└── dev.db                 # SQLite database file
 ```
 
 ---
@@ -102,7 +101,7 @@ prisma/
 - Client components handle interactive features (search, filter, approve/reject)
 - API routes are protected with session checks
 
-### 3. Database Design (Prisma + SQLite)
+### 3. Database Design (Prisma + PostgreSQL)
 
 **User Model** (Admin):
 | Field | Type | Notes |
@@ -179,7 +178,7 @@ npm run dev
 ## 📄 Environment Variables
 
 ```env
-DATABASE_URL="file:./dev.db"
+DATABASE_URL="postgresql://user:password@localhost:5432/nayepankh"
 NEXTAUTH_SECRET="your-secret-key"
 NEXTAUTH_URL="http://localhost:3000"
 
