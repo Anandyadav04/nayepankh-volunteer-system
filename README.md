@@ -4,6 +4,8 @@ A full-stack web application for managing volunteer registrations at NayePankh F
 
 ## Live URL: https://nayepankh-volunteer-system.vercel.app/
 
+### Video Demo: https://drive.google.com/file/d/14fULLhLIu2R9w4mGXDAPwQv6jfpUBTmo/view?usp=drive_link 
+
 ## ✨ Features
 
 - **🎨 Premium UI** — Modern glassmorphism design with micro-animations
@@ -52,7 +54,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 Navigate to [http://localhost:3000/login](http://localhost:3000/login)
 
 - **Email:** `admin@nayepankh.com`
-- **Password:** *(Set this to anything during your very first login, it will become the permanent password)*
+- **Password:** admin123 (only for testing)
 
 ## 📖 Documentation
 
